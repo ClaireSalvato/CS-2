@@ -22,10 +22,10 @@ public class JavaBeansAndBytes {
     public JavaBeansAndBytes() {
         name = "Java Beans & Bytes: The Code Café";
         isOpen = true;
-        yearFounded = 1995;
+        yearFounded = 2007;
 
         System.out.println("Welcome to " + name + "!");
-        if (isOpen) {
+        if (isOpen == true) {
             System.out.println("We are open!");
         } else {
             System.out.println("We are closed :(");
@@ -34,12 +34,15 @@ public class JavaBeansAndBytes {
 
         // TODO
         // Update the year founded and print the new yearFounded in a sentence
+        yearFounded = 2007;
+        System.out.println("actually, founded in" + yearFounded);
+
 
         // Calling methods
         randomDiscount();
         // TODO
         // Add parameter to specialOfTheDay (drink of your choice)
-        specialOfTheDay();
+        specialOfTheDay("hot chocolate");
         countCups();
         baristasChoice();
 
@@ -55,12 +58,16 @@ public class JavaBeansAndBytes {
     // Method to generate a random discount
     public void randomDiscount() {
         // TODO
+
+        int r = (int) Math.random()*30;
+        System.out.println("Random discount is" + r + "%!");
         // Make this method generate a random integer discount (0-30%)
         // and print the result.
     }
 
     // Method with a parameter for the special of the day
-    public void specialOfTheDay() {
+    public void specialOfTheDay(String special) {
+        System.out.println("Today's special is" + special);
         // TODO
         // Make this method accept a parameter representing the day’s special.
         // Print the day's special.
@@ -72,6 +79,14 @@ public class JavaBeansAndBytes {
 
         // TODO
         // Write three different for loops that print the indicated numbers:
+
+        for (int c = 1;c<6 ;c=c+1) {
+            System.out.println(c + "" + "\n");
+        }
+
+        for(int x = 2; x<12; x = x+3){
+            System.out.println(x + ", ");
+        }
 
         // Print 1 to 5
 
